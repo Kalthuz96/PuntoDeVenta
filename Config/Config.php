@@ -19,4 +19,10 @@
 
     //Simbolo de moneda
     const SMONEY = "$";
+
+    //Datos envio de correo
+	const NOMBRE_REMITENTE = "Ing. Jesús Renato De La Rosa Martínez";
+	const EMAIL_REMITENTE = "informartica@iudm.mx";
+	const NOMBRE_EMPESA = "Nombre Empresa";
+	const WEB_EMPRESA = "Página Web empresa";
 ?>

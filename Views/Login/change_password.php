@@ -21,37 +21,20 @@
       <div class="logo">
         <h1><?= $data['page_title']?></h1>
       </div> 
-      <div class="login-box">
-        <form id="formLogin" class="login-form" action="">
-          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>INICIAR SESIÓN</h3>
+      <div class="login-box flipped">
+        <form id="formResetPass" name="formResetPass" class="forget-form" action="">
+            <input type="hidden" id="idUser" name="idUser" value="<?=$data['UserID'];?>" required>
+            <input type="hidden" id="txtEmail" name="txtEmail" value="<?=$data['UserEmail'];?>" required>
+            <input type="hidden" id="txtToken" name="txtToken" value="<?=$data['UserToken'];?>" required>
+          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-lock"></i>Cambiar Contraseña</h3>
           <div class="form-group">
-            <label class="control-label">USUARIO</label>
-            <input id="txtNickName" name="txtNickName"class="form-control" type="text" placeholder="NickName" autofocus>
+            <input id="txtPassword" name="txtPassword" class="form-control" type="password" placeholder="Nueva Contraseña" required>
           </div>
           <div class="form-group">
-            <label class="control-label">CONTRASEÑA</label>
-            <input id="txtPassword" name="txtPassword" class="form-control" type="password" placeholder="Password">
-          </div>
-          <div class="form-group">
-            <div class="utility">
-              <p class="semibold-text mb-2"><a href="#" data-toggle="flip">¿Olvidaste Tu Contraseña?</a></p>
-            </div>
-          </div>
-          <div class="form-group btn-container">
-            <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>INICIAR SESIÓN</button>
-          </div>
-        </form>
-        <form id="formRecetPass" name="formRecetPass" class="forget-form" action="">
-          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-lock"></i>¿Olvidaste Tu Contraseña?</h3>
-          <div class="form-group">
-            <label class="control-label">EMAIL</label>
-            <input id="txtEmailReset" name="txtEmailReset" class="form-control" type="text" placeholder="Email">
+            <input id="txtPasswordConfirm" name="txtPasswordConfirm" class="form-control" type="password" placeholder="Confirmar Contraseña" required>
           </div>
           <div class="form-group btn-container">
             <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-unlock fa-lg fa-fw"></i>RESTABLECER</button>
-          </div>
-          <div class="form-group mt-3">
-            <p class="semibold-text mb-0"><a href="#" data-toggle="flip"><i class="fa fa-angle-left fa-fw"></i> Volver Al Login</a></p>
           </div>
         </form>
       </div>

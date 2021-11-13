@@ -3,7 +3,7 @@
     require_once("Config/Config.php");
     require_once("Helpers/Helpers.php");
     
-    $Link = !empty($_GET['link']) ? $_GET['link'] : 'home/home';
+    $Link = !empty($_GET['link']) ? $_GET['link'] : 'login/login';
     $arrLink = explode('/',$Link);
     $controller = $arrLink[0];
     $method = $arrLink[0];

@@ -13,6 +13,6 @@
         <li><a class="app-menu__item" href="<?= base_url();?>category"><i class="app-menu__icon fa fa-list-alt"></i><span class="app-menu__label">Categorias</span></a></li>
         <li><a class="app-menu__item" href="<?= base_url();?>product"><i class="app-menu__icon fa fa-product-hunt"></i><span class="app-menu__label">Productos</span></a></li>
         <li><a class="app-menu__item" href="<?= base_url();?>sales"><i class="app-menu__icon fa fa-shopping-cart"></i><span class="app-menu__label">Ventas</span></a></li>
-        <li><a class="app-menu__item" href="<?= base_url();?>log"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Transacciones</span></a></li>      
+        <li><a class="app-menu__item" href="<?= base_url();?>transaction"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Transacciones</span></a></li>      
     </ul>
-    </aside>
+    </aside> 
